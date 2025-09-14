@@ -57,7 +57,7 @@ class MainWindow(QMainWindow):
         self.quit_action.triggered.connect(qApp.quit)
 
         self.about_action.setShortcut('Ctrl+A')
-        self.about_action.triggered.connect(about_dialog) #<================= 여기서 부터 다시 시작
+        self.about_action.triggered.connect(about_dialog) 
 
         self.open_action.setShortcut('Ctrl+O')
         self.open_action.triggered.connect(self.open_file)
@@ -93,7 +93,7 @@ class MainWindow(QMainWindow):
 
     def save_as_file(self):
         pass
-        path = QFileDialog.getSaveFileName(window, 'Save As')[0] #<--------------- 이 부분 수정필요
+        path = QFileDialog.getSaveFileName(window, 'Save As')[0]
         print(path)
         print("3")
         if path:
